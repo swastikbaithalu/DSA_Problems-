@@ -2,8 +2,8 @@
 Problem : reverse a linked list using iterative method.
 
 Approach :
-make three pointers, for previous,current,next node
-connect, current->next to previous node, and then move to the next node
+    make three pointers, for previous,current,next node
+    connect, current->next to previous node, and then move to the next node
 
 Time complexity :- O(n)
 Space complexity -: O(1)
