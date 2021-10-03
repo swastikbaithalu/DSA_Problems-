@@ -1,4 +1,13 @@
-//reverse a linked list using iterative method
+/*
+Problem : reverse a linked list using iterative method.
+
+Approach :
+make three pointers, for previous,current,next node
+connect, current->next to previous node, and then move to the next node
+
+Time complexity :- O(n)
+Space complexity -: O(1)
+*/
 #include<iostream>
 using namespace std;
 
@@ -45,8 +54,11 @@ node* reverse(node* &head){
 }
 int main(){
     node* head = NULL;
-    for(int i =1;i<=5;i++){
-        insertAtTail(head,i);
+    int n;cin>>n; //number of nodes
+    int a;
+    for(int i =0;i<n;i++){
+        cin>>a;
+        insertAtTail(head,a);
     }
     cout<<"Original Linked List"<<endl;
     display(head);
@@ -56,3 +68,16 @@ int main(){
 
     return 0;
 }
+/*
+Sample input/output :
+    input :
+    5
+    1 2 3 4 5
+
+    output:
+    original linked list
+    1->2->3->4->5->NULL
+    reversed linked list
+    5->4->3->2->1->NULL
+
+*/

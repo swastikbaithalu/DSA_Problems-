@@ -1,4 +1,17 @@
-//reverse a linked list using recursion
+/*
+Problem : reverse a linked list using recursive method
+
+Approach :
+we are at head,recursively reverse remaining linked list
+the head->next node should be second last node and it's next should be head
+so head->next->next = head
+as the head will be the last node so it's next will be null
+head->next = null
+then return reversed linked list
+
+Time complexity :- O(n)
+Space complexity :- O(1)
+*/
 #include<iostream>
 using namespace std;
 
@@ -37,7 +50,7 @@ node* reverseRecur(node* &head){
         return head;
 
     }
-    node* newHead = reverseRecur(head->next);
+    node* newHead = reverseRecur(head->next); //calling for the remaining linked list
     head->next->next = head;
     head->next = NULL;
 
@@ -45,8 +58,11 @@ node* reverseRecur(node* &head){
 }
 int main(){
     node* head = NULL;
-    for(int i=1;i<=6;i++){
-        insertAtTail(head,i);
+    int n;cin>>n; //number of nodes
+    int a;
+    for(int i=0;i<n;i++){
+        cin>>a
+        insertAtTail(head,a);
     }
     cout<<"original Linked List"<<endl;
     display(head);    
@@ -56,3 +72,15 @@ int main(){
 
     return 0;
 }
+/*
+Sample input/output:
+    input:
+    5
+    1 2 3 4 5
+
+    output:
+    original linked list
+    1->2->3->4->5->NULL
+    reversed linked list
+    5->4->3->2->1->NULL
+*/
