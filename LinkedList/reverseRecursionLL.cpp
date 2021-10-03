@@ -2,12 +2,12 @@
 Problem : reverse a linked list using recursive method
 
 Approach :
-we are at head,recursively reverse remaining linked list
-the head->next node should be second last node and it's next should be head
-so head->next->next = head
-as the head will be the last node so it's next will be null
-head->next = null
-then return reversed linked list
+    we are at head,recursively reverse remaining linked list
+    the head->next node should be second last node and it's next should be head
+    so head->next->next = head
+    as the head will be the last node so it's next will be null
+    head->next = null
+    then return reversed linked list
 
 Time complexity :- O(n)
 Space complexity :- O(1)
