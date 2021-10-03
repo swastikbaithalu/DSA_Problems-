@@ -1,9 +1,9 @@
 /*
 Question : Given a linked list and an integer K. Append the last k node of the linked list to front.
-Case 1:
- if size of linked list <= k then return the linked list as it is.
-Case 2:
-if size of linked list is > k then appen last k node to the front and return the new Linked list
+    Case 1:
+    if size of linked list <= k then return the linked list as it is.
+    Case 2:
+    if size of linked list is > k then appen last k node to the front and return the new Linked list
 
 Approach :
 find the length of linked list:- length = l;
