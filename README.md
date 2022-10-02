@@ -1,4 +1,5 @@
-# DSA_Problems <img src="https://github.com/ralphcoder/pessonal/blob/master/photoes/giphy.gif" width="80"/>
+<p align="center"> # DSA_Problems <img src="https://github.com/ralphcoder/pessonal/blob/master/photoes/giphy.gif" width="80"/>
+  </p>
 DSA QUESTION
 
 ## Overview 🖖
